@@ -77,7 +77,18 @@ label {
   flex-direction: column;
 }
 
-.cookpot {
+h4 {
+  font-style: italic;
+  text-align: center;
+  margin-top: 75px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.cookpot-logo {
   width: 100px;
   position: relative;
   top: 60%;
@@ -88,20 +99,13 @@ label {
   display: flex;
 }
 
-.new-meal {
-  display: flex;
-  align-items: center;
-}
-
 .clear-button {
-  display: block;
   background-color: #95a5a6;
-  width: 15%;
-  height: 10%;
-  position: relative;
-  bottom: 7%;
-  left: 80%;
   border-color: #95a5a6;
+  color: white;
+  position: relative;
+  top: 55%;
+  left: 82%;
 }
 
 .hidden {
