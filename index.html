@@ -6,37 +6,31 @@
     <title>What's for Dinner?</title>
   </head>
   <body>
-
     <section class="question-line">
       <h3 class="main-question">What's for Dinner?</h3>
     </section>
-
     <section class="main-page">
-
-      <section class="boxes" id="left-box">
-        <h2>What are you looking for?</h2>
-
-        <label for="side"><input class="side-radio-button" type="radio" id="side">Side</label>
-        <label for="main-dish"><input class="main-dish-radio-button" type="radio" id="main-dish">Main Dish</label>
-        <label for="dessert"><input class="dessert-radio-button" type="radio" id="dessert">Dessert</label>
-        <label for="entire-meal"><input class="entire-meal-radio-button" type="radio" id="entire-meal">Entire Meal</label>
-        <button class="lets-cook-button">LET'S COOK!</button>
+      <section>
+        <form class="boxes" id="left-box">
+          <h2>What are you looking for?</h2>
+          <label for="side"><input class="side-radio-button" name="food-option" value="side" type="radio" id="side">Side</label>
+          <label for="main-dish"><input class="main-dish-radio-button" name="food-option" value="main-dish" type="radio" id="main-dish">Main Dish</label>
+          <label for="dessert"><input class="dessert-radio-button" name="food-option" value="dessert" type="radio" id="dessert">Dessert</label>
+          <label for="entire-meal"><input class="entire-meal-radio-button" name="food-option" value="entire-meal" type="radio" id="entire-meal">Entire Meal</label>
+          <button class="lets-cook-button">LET'S COOK!</button>
+        </form>
       </section>
-
       <section class="boxes" id="right-box">
-        <section class="view cookpot-logo">
-          <img class="cookpot" src="./assets/cookpot.svg" alt="Cookpot Logo" />
-
-          <section class="view new-meal hidden">
-
-            <p class="random-dish"></p>
-            <p class="random-meal"></p>
-
-            <button class="clear-button">CLEAR</button>
-          </section>
+        <section class="view">
+          <img class="cookpot-logo" src="./assets/cookpot.svg" alt="Cookpot Logo" />
+            <section class="recipe hidden">
+              <h4 class="you-should-make">You should make:</h4>
+              <h1 class="random-dish"></h1>
+              <h1 class="random-meal"></h1>
+              <button class="clear-button">CLEAR</button>
+            </section>
         </section>
       </section>
-
     </section>
     <script type="text/javascript" src="./data.js"></script>
     <script type="text/javascript" src="./main.js"></script>
